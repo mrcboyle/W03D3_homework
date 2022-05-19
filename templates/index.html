@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Customer Orders</title>
+</head>
+
+<body>
+    <h1>My Orders</h1>
+    {% for order in orders %}
+    <div>
+        <p>
+            <b>{{order.customer_name}}</b> : {{order.order_date}} : {{order.description}} : {{order.qty}} :
+            {{order.price}} : {{order.total_price}}
+        </p>
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>
